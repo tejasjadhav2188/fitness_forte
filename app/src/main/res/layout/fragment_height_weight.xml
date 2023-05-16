@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".feature_note.presentation.onboarding.screen.HeightWeight">
+
+    <ImageView
+        android:id="@+id/hwIMG"
+        android:layout_width="402dp"
+        android:layout_height="387dp"
+        android:src="@drawable/dr_weight_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388" />
+
+    <TextView
+        android:id="@+id/hwInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Tell us your"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hw_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Weight(kgs)"
+        android:textColor="@color/blue_500"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/hwInfo"
+        app:layout_constraintStart_toStartOf="@+id/hwInfo"
+        app:layout_constraintTop_toBottomOf="@+id/hwInfo" />
+
+    <NumberPicker
+        android:id="@+id/hw_weightPicker"
+        android:layout_width="75dp"
+        android:layout_height="139dp"
+        app:layout_constraintEnd_toEndOf="@+id/hw_weight"
+        app:layout_constraintStart_toStartOf="@+id/hw_weight"
+        app:layout_constraintTop_toBottomOf="@+id/hw_weight"
+        android:selectionDividerHeight="0dp"/>
+
+    <TextView
+        android:id="@+id/hw_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Height(cms)"
+        android:textColor="@color/blue_500"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/hw_weightPicker"
+        app:layout_constraintStart_toStartOf="@+id/hw_weightPicker"
+        app:layout_constraintTop_toBottomOf="@+id/hw_weightPicker" />
+
+    <NumberPicker
+        android:id="@+id/hw_heightPicker"
+        android:layout_width="75dp"
+        android:layout_height="139dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/hw_height"
+        app:layout_constraintStart_toStartOf="@+id/hw_height"
+        app:layout_constraintTop_toBottomOf="@+id/hw_height"
+        android:selectionDividerHeight="0dp"/>
+
+    <TextView
+        android:id="@+id/hw_bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Your BMI :"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hwIMG" />
+
+    <Button
+        android:id="@+id/hw_btnfinish"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Finish"
+        android:textColor="@color/blue_500"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hwIMG"
+        app:layout_constraintVertical_bias="0.769" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
